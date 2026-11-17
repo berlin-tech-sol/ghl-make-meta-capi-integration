@@ -31,6 +31,46 @@ GoHighLevel form ──► GHL workflow ──► Make webhook ──► Faceboo
 | Connection reauthorized in Make | Runs succeed again |
 | Same contact submits twice | Two separate events, each with its own event ID and time |
 
+## Screenshots
+
+From the live build. Personal email and phone are blurred.
+
+**1. The GoHighLevel lead form**
+
+![GoHighLevel lead form](screenshots/01-ghl-lead-form.png)
+
+**2. Make scenario: webhook → Facebook Conversions API, Events Received 1**
+
+![Make scenario success](screenshots/02-make-scenario-success.png)
+
+**3. Contact data received from the GHL workflow**
+
+![GHL webhook data in Make](screenshots/03-ghl-webhook-data.png)
+
+**4. Connected apps: what Make can access in Meta**
+
+![Meta connected app permissions](screenshots/04-meta-connected-app-permissions.png)
+
+**5. Lead shown as Processed, from Server, with user data keys**
+
+![Meta Test Events, Lead processed](screenshots/05-meta-test-events-processed.png)
+
+**6. `190, OAuthException` after Make's access was removed**
+
+![OAuth 190 error in Make](screenshots/06-oauth-190-error.png)
+
+**7. Run history: success, success, error**
+
+![Make run history](screenshots/07-make-run-history.png)
+
+**8. Several Lead events processed in Test Events**
+
+![Meta Test Events list](screenshots/08-meta-test-events-list.png)
+
+**9. Event ID built from contact ID plus submission time**
+
+![Unique event ID](screenshots/09-unique-event-id.png)
+
 ## Working rules for client setups
 
 - The client clicks through every change. No passwords or login codes are shared.
